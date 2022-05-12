@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+header{
+    height: 70px;
+}
+header h1{
+    display: inline-block;
+    float: left;
+    padding: 15px 24px;
+    text-transform: uppercase;
+}
+header ul{
+    float: right;
+    color: black;
+}
+header ul li{
+    padding:24px;
+    display: inline-block;
+}
+header ul li a:hover {
+    color:black;
+
+}
+a{
+    text-decoration: none;
+}
+section{
+    padding: 50px 0;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.container::after{
+    content: none;
+    display: block;
+    clear: both;
+}
+.banner{
+    background-color: black;
+}
+.banner img{
+    height: 195px;
+    width: 195px;
+    border-radius: 50%;
+    float: right;
+    border:10px solid #fff;
+}
+.banner h2{
+    color:white;
+    margin-bottom: 15px;
+    text-align: left;
+}
+section h3{
+    padding-bottom: 20px;
+    text-align: center;
+    margin:20px;
+    position: relative;
+}
+section h3::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 1px;
+    background-color: #ddd;
+    left: calc(50% - 60px);
+}
+section h3::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 4px;
+    background-color:black;
+    left: calc(50% - 20px);
+}
+#about p{
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.poto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.poto img{
+    width:100px;
+    height:100px;
+    margin:20px;
+}
+.dua{
+    width: 33.33%;
+    box-sizing: border-box;
+    float:left;
+    text-align: center;
+    padding: 50px 10px;
+}
+.dua h4{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+.gambar{
+    width:33.3%;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    padding: 50px 10px;
+    margin-bottom: 15px;
+}
+.gambar img{
+    width: 100px;
+}
+.gambar p{
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.gambar a:hover img{
+    transform: scale(1.2);
+}
+.clear {clear:both}
+footer{
+    background-color: black;
+    padding:30px;
+    width:auto;
+    height:auto;
+    text-align: center;
+    color: white;
+}
